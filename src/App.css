@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  
+}
+
+body {
+  background: #136a8a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+h1{
+  margin: 2em;
+}
+
+label {
+  display: block;
+  margin-left: 2.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+#todo {
+  width: 300px;
+  height: 30px;
+  border-radius: 0.2em;
+  outline-color: aliceblue;
+  margin-left: 8em;
+}
+button {
+  height: 35px;
+  width: 60px;
+  margin-left: 0.3em;
+  background-color: greenyellow;
+  color: black;
+  border: none;
+  font-size: 1.2em;
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+ol {
+	list-style: none;
+  margin: 0.5em auto;
+  width: 500px;
+}
+
+li {
+	
+	background: #fff;
+	height: 40px;
+	line-height:  40px;
+  color: #666;
+  width: 300px;;
+  margin: 0 auto;
+}
+
+li span {
+	background: #e74c3c;
+	height: 40px;
+	
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+  opacity: 0;
+  float: right;
+}
+
+li:hover span{ 
+   width: 40px;
+   opacity: 1.0;
+
+ }
+
+ li:nth-child(2n) {
+	background: #f7f7f7;
+}
